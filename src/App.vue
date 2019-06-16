@@ -3,8 +3,7 @@
     <div id="header">The Employment Based Immigration Interview Practice</div>
     <Home question="Welcome to your employment based green card interview."/>
     <div id="footer">
-      <a href="#" id="footer-item">About the website</a>
-      <a href="#" id="footer-item">About me</a>
+      <a href="/about.html" id="footer-item" target="_blank">About the website</a>
     </div>
   </div>
 </template>
