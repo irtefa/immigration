@@ -59,4 +59,18 @@ export default {
 #footer-item:hover {
   color: #BF0A30;
 }
+
+#wrapper {
+  font-size: 20px;
+}
+
+#next-btn {
+  display: inline-block;
+  background-color: #BF0A30;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  font-size: 30px;
+}
 </style>

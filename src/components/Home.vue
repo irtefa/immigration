@@ -1,11 +1,16 @@
 <template>
   <div>
     <h1>{{ question }}</h1>
-    <p>Press any key for the next question</p>
     <div v-if="isMobile()">
-      <button v-on:click="next">
-        Next
-      </button>
+      <div id="wrapper"> Tap this 
+      <div id="next-btn" v-on:click="next">
+        Button
+      </div>
+      to see the next question.
+      </div>
+    </div>
+    <div v-else>    
+      <p>Press any key for the next question</p>
     </div>
   </div>
 </template>
@@ -56,8 +61,8 @@ export default {
 
     shuffle: function(array) {
       for (let i = array.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1)) // random index from 0 to i
-        [array[i], array[j]] = [array[j], array[i]] // swap elements
+        let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
+        [array[i], array[j]] = [array[j], array[i]]; // swap elements
       }
       return array
     },
