@@ -2,9 +2,11 @@
   <div>
     <h1>{{ question }}</h1>
     <p>Press any key for the next question</p>
-    <button v-on:click="next">
-      Next
-    </button>
+    <div v-if="isMobile()">
+      <button v-on:click="next">
+        Next
+      </button>
+    </div>
   </div>
 </template>
 
@@ -52,13 +54,20 @@ export default {
       this.next()
     },
 
-    shuffle: function shuffle(array) {
+    shuffle: function(array) {
       for (let i = array.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1)) // random index from 0 to i
         [array[i], array[j]] = [array[j], array[i]] // swap elements
       }
       return array
-    }
+    },
+    isMobile: function() {
+      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        return true
+      } else {
+        return false
+      }
+    },
   }
 }
 </script>
