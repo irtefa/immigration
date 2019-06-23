@@ -4,6 +4,7 @@
     <Home question="Welcome to your employment based green card interview."/>
     <div id="footer">
       <a href="/about.html" id="footer-item" target="_blank">About the website</a>
+      <div id="disclaimer">Disclaimer: This is a private web site and is NOT affiliated with any government agency. The information provided in this web site is of a general nature and offered for informational purposes only; it is not offered as and does not constitute legal advice. The information may not apply to any particular set of facts or circumstances..</div>
     </div>
   </div>
 </template>
@@ -29,6 +30,11 @@ export default {
   margin-top: 200px;
 }
 
+#disclaimer {
+  font-size: 10px;
+  color: white;
+}
+
 #header {
    position:fixed;
    left:7px;
@@ -39,7 +45,7 @@ export default {
    position:fixed;
    left:0px;
    bottom:0px;
-   height:30px;
+   height:55px;
    width:100%;
    background:#002868;
 }
@@ -52,7 +58,7 @@ export default {
 
 #footer-item {
   color: white;
-  padding: 20px;
+  padding: 70px;
 }
 
 #footer-item:hover {
