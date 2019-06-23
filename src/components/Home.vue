@@ -32,7 +32,7 @@ export default {
         {title: "What's your full name?"},
         {title: "What's your father's full name?"},
         {title: "What's your mother's full name?"},
-        {title: "What's the last physical address where you stayed at?"},
+        {title: "What's the last physical address where you lived at?"},
         {title: "Are you married?"},
         {title: "When did you join your current company?"},
         {title: "Where did you live before your current physical address?"},
